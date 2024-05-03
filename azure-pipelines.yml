@@ -1,4 +1,11 @@
 # Docker
+- task: DockerCompose@0
+  inputs:
+    containerregistrytype: 'Azure Container Registry'
+    azureSubscription: 'Nikith  Kumar 7 Trail (ab0b4ef3-5d91-4c6d-bd15-790b278beda7)'
+    azureContainerRegistry: '{"loginServer":"tetrisgame.azurecr.io", "id" : "/subscriptions/ab0b4ef3-5d91-4c6d-bd15-790b278beda7/resourceGroups/GAME/providers/Microsoft.ContainerRegistry/registries/Tetrisgame"}'
+    dockerComposeFile: '**/docker-compose.yml'
+    action: 'Push services'
 # Build and push an image to Azure Container Registry
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
